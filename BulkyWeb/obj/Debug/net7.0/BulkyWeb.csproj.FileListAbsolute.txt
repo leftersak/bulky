@@ -73,3 +73,9 @@ C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\runtimes
 C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\obj\Debug\net7.0\BulkyWeb.csproj.AssemblyReference.cache
 C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\obj\Debug\net7.0\BulkyWeb.csproj.CopyComplete
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.DataAccess.dll
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Models.dll
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Utility.dll
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.DataAccess.pdb
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Models.pdb
+C:\Users\ΕΛΕΥΘΕΡΙΟΣ\InfraLabs\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Utility.pdb
