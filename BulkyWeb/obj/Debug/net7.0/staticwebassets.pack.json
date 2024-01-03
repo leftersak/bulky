@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\20875576-fc79-4551-90c0-a71823aac9f2.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\20875576-fc79-4551-90c0-a71823aac9f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\3f823e47-5424-44cb-9e8b-30b091137812.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\3f823e47-5424-44cb-9e8b-30b091137812.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\67ad64b5-c1e4-47da-b8e9-c7aecdcacc52.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\67ad64b5-c1e4-47da-b8e9-c7aecdcacc52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\85275d80-8def-4d00-800b-ca5cffedfd17.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\85275d80-8def-4d00-800b-ca5cffedfd17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\a48f3249-76bf-4819-a7ab-7e26b13a1e92.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\a48f3249-76bf-4819-a7ab-7e26b13a1e92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\da9e6691-2584-4832-bc4f-83f8c1dc1b90.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\da9e6691-2584-4832-bc4f-83f8c1dc1b90.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\ea2ab126-8f89-4a94-9902-031272c82e41.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\ea2ab126-8f89-4a94-9902-031272c82e41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\images\\Product\\f95a727d-c2fb-459d-a12e-4f8a1ca85a11.png",
+      "PackagePath": "staticwebassets\\images\\Product\\f95a727d-c2fb-459d-a12e-4f8a1ca85a11.png"
+    },
+    {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
