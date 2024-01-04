@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EG4j1rMB/UZm4eTXNDZTYhsZEM42+U2SRckTcRmSaTs=",
+  "Hash": "bzbLXuh6LXJn+P1vj2cLblT0DdATO/GYaqZRTjWcNik=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -1239,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Product\\f95a727d-c2fb-459d-a12e-4f8a1ca85a11.png"
+    },
+    {
+      "Identity": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\company.js",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "js/company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\company.js"
     },
     {
       "Identity": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
