@@ -35,8 +35,9 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        /* In order to pass the dropdown for the Company we have to inject the IUnitOfWork */
         private readonly IUnitOfWork _unitOfWork;
-
+        
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
@@ -139,6 +140,11 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
                     Text = i,
                     Value = i
                 }),
+                CompanyList = _unitOfWork.Company.GetAll().Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                })
                 
             };
 
@@ -163,6 +169,10 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
                 user.PostalCode = Input.PostalCode;
                 user.PhoneNumber = Input.PhoneNumber;
 
+                if (Input.Role == SD.Role_Company)
+                {
+                    user.CompanyId = Input.CompanyId;
+                }
                 
 
                 var result = await _userManager.CreateAsync(user, Input.Password);

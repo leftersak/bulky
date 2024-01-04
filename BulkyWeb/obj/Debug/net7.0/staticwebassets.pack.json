@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\Product\\f95a727d-c2fb-459d-a12e-4f8a1ca85a11.png"
     },
     {
+      "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\company.js",
+      "PackagePath": "staticwebassets\\js\\company.js"
+    },
+    {
       "Id": "C:\\Users\\ΕΛΕΥΘΕΡΙΟΣ\\InfraLabs\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },
