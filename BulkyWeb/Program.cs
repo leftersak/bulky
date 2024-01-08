@@ -1,10 +1,11 @@
-using BulkyBook.DataAccess.Data;
+    using BulkyBook.DataAccess.Data;
 using BulkyBook.DataAccess.Repository;
 using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using BulkyBook.Utility;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+//As long as the property names inside the Stripe Settings match what is there in Stripe Section in appsettings.json it will
+//automatically inject these values inside the properties-we have also to download Stripe.Net from Nuget Packages
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
 /* AddIdentity appendroles and IdentityRole, and
  * AddDefaultTokenProviders() to avoid GenerateEmailConfirmation ERROR*/
@@ -26,6 +29,21 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LoginPath = $"/Identity/Account/Login";
     options.LogoutPath = $"/Identity/Account/Logout";
     options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
+
+builder.Services.AddAuthentication().AddFacebook(option =>
+{
+    option.AppId = "1103161011042667";
+    option.AppSecret = "18cbfffd7758b6e8b1099e4d5473b189";
+});
+
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(5);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
 
@@ -44,12 +62,16 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
+
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
