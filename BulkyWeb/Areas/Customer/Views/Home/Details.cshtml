@@ -1,8 +1,8 @@
 ﻿@model ShoppingCart
 
-<form method="post" action="Details">
+<form method="post">
     <input asp-for="ProductId" hidden />
-    <div class="card shadow border-0 mt-4 mb-4">
+    <div class="card shadow border-0 mt-4 mb-4 pb-4 ">
         <div class="card-header bg-secondary bg-gradient text-light py-4">
             <div class="row">
                 <div class="col-12 text-center">
@@ -73,10 +73,10 @@
                             @* In order to avoid HTML format we put Html.Raw() *@
                             <p class="text-secondary lh-sm">@Html.Raw(Model.Product.Description)</p>
                         </div>
-                        <div class="row pl-2 mb-3">
-                            <div class="col-md-4">
+                    <div class="row pl-2 mb-3 justify-content-center align-items-center">
+                            <div class="col-md-2" style="width:auto;">
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text bg-primary text-white border-0 fw-semibold"
+                                    <span  class="input-group-text bg-primary text-white border-0 fw-semibold"
                                           id="inputGroup-sizing-default">
                                         Count
                                     </span>
@@ -87,9 +87,9 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-md-6 pb-1">
-                                <button type="submit" 
-                                        class="btn btn-primary bg-gradient  w-100 py-2 text-uppercase fw-semibold">
+                            <div class="col-12 col-md-6 pb-4">
+                                <button type="submit" asp-action="Details"
+                                        class="btn btn-primary bg-gradient  w-100 py-2 mb-4 text-uppercase fw-semibold">
                                     Add to Cart 
                                 </button>
                             </div>
