@@ -68,14 +68,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         [HttpPost]
         public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
-            var response = _unitOfWork.Product.Get(u => u.Title.ToLower() == productVM.Product.Title.ToLower());
-
-			if (response!=null)
-            {
-                ModelState.AddModelError("title", "The current Title already exists.");
-                TempData["error"] = "The current Title already exists.";
-                
-			}
+            
 
             if (ModelState.IsValid)//For the DataAnnotations
             {
