@@ -72,6 +72,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
             else 
             {
                 //add cart record
+                shoppingCart.Id = 0;
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
                 _unitOfWork.Save();
                 //Wheneveer we are adding an item to the ShoppingCart we will be adding that value to session
